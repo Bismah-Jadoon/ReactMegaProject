@@ -57,6 +57,12 @@ export default function Header() {
                 </li>
                ) : null
             )}
+
+            {authStatus && (
+              <li>
+                <LogoutButton />
+              </li>
+            )}
           </ul>
         </nav>
       </Container>

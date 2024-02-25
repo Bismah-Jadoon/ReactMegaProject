@@ -49,7 +49,9 @@ export default function Header() {
           <ul className="flex ml-auto">
             {navItems.map((item) => 
                item.active ? (
-                <li></li>
+                <li key={item.name}>
+                  <button>{item.name}</button>
+                </li>
                ) : null
             )}
           </ul>

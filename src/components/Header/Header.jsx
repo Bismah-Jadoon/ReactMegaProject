@@ -8,7 +8,7 @@ export default function Header() {
   const authStatus = useSelector((state) => state.auth.status);
   const navigate = useNavigate();
 
-  const naItems = [
+  const navItems = [
     {
       name: "Home",
       slug: "/",
@@ -46,7 +46,13 @@ export default function Header() {
           </Link>
           </div>
 
-          <ul className="flex ml-auto"></ul>
+          <ul className="flex ml-auto">
+            {navItems.map((item) => 
+               item.active ? (
+                <li></li>
+               ) : null
+            )}
+          </ul>
         </nav>
       </Container>
     </header>

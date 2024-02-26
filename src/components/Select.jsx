@@ -11,6 +11,11 @@ function Select({
     <div className="w-full ">
         {label && 
         <label htmlFor={id} className=""></label>}
+        <select
+        {...props}
+        >
+
+        </select>
     </div>
   ) 
 }

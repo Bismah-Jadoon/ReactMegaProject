@@ -11,7 +11,16 @@ function Signup() {
     const dispatch = useDispatch()
     const [error, setError] = useState("")
     const {register, handleSubmit} = useForm()
-    
+
+   const create = async(data) =>{
+    setError("")
+    try {
+        
+    } catch (error) {
+      setError(error.message)  
+    }
+   }
+
   return (
     <div>
       

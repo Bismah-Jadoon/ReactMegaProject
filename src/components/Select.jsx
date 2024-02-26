@@ -8,7 +8,10 @@ function Select({
 }, ref) {
     const id = useId()
   return(
-    <div></div>
+    <div className="w-full ">
+        {label && 
+        <label htmlFor={id} className=""></label>}
+    </div>
   ) 
 }
 

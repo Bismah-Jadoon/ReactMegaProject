@@ -14,7 +14,7 @@ function Select({ options, label, className = "", ...props }, ref) {
         {/* select mn options dainy party options loop krny prty r options sy ik array hi milta hai agr array na lo to problem hoti hai is lia hm problem ko avoid krny k lia array lagaty hn */}
         {/* ho skta hai options mn value na ho to agr hm us py .map ya loop directly lgain gy to program crash kry ga is lia hm nay usy condition dy d k agr value us k andar hai loop krny layak to loop kro*/}
         {options?.map((option) => (
-            <option key={option}>
+            <option key={option} value={option}>
                 {option}
             </option>
         ))}
@@ -23,4 +23,4 @@ function Select({ options, label, className = "", ...props }, ref) {
   );
 }
 
-export default Select;
+export default React.forwardRef(Select);

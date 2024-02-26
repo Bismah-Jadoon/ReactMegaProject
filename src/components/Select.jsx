@@ -1,6 +1,11 @@
 import React from "react";
 
-function Select() {
+function Select({
+    options,
+    label,
+    className,
+    ...props
+}) {
   return <div></div>;
 }
 

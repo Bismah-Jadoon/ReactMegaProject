@@ -52,5 +52,11 @@ export default function PostForm({ post }) {
       }
     }
   };
+
+  const slugTransform = useCallback((value) => {
+    
+  }, [])
+
+
   return <div></div>;
 }

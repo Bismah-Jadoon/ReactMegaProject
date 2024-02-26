@@ -13,6 +13,9 @@ function Select({
         <label htmlFor={id} className=""></label>}
         <select
         {...props}
+        id = {id}
+        ref={ref}
+        className={``}
         >
 
         </select>

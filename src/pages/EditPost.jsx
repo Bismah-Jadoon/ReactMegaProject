@@ -20,5 +20,9 @@ export default function EditPost() {
     }
   }, [slug, navigate]);
 
-  return <div></div>;
+  return post ? <div className="py-8">
+    <Container>
+      <PostForm post={post}/>
+    </Container>
+  </div>:null;
 }

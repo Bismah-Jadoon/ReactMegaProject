@@ -10,8 +10,8 @@ import AddPost from "../pages/AddPost";
 import PostForm from './post-form/PostForm'
 import PostCard from './PostCard'
 import AuthLayout from './AuthLayout'
-import Button from '../components/Button'
-import input from "./input";
+import Button from './Button'
+import Input from './Input'
 import Select from "./Select";
 
 export {
@@ -28,6 +28,6 @@ export {
   PostCard,
   Button,
   AuthLayout,
-  input,
+  Input,
   Select,
 };
